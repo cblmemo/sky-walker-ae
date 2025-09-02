@@ -2,9 +2,6 @@ from plot_utils import *
 from pathlib import Path
 import json
 
-paper_fig_dir = 'paper_fig'
-os.makedirs(paper_fig_dir, exist_ok=True)
-
 result_file_dir = Path(__file__).parent
 TIMEOUT_SKIP_SECONDS = 1000
 

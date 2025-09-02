@@ -1,0 +1,7 @@
+datasets==3.2.0
+matplotlib==3.9.4
+numpy==2.0.2
+tqdm==4.67.1
+rich==13.9.4
+torch==2.5.1
+seaborn==0.13.2

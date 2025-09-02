@@ -14,6 +14,9 @@ import numpy as np
 import pandas as pd
 import seaborn as sns
 
+paper_fig_dir = 'paper_fig'
+os.makedirs(paper_fig_dir, exist_ok=True)
+
 # Purples.
 colors = list(reversed(sns.color_palette("ch:2.5,+.2,dark=.3")))[:2]
 colors = sns.color_palette("ch:2.5,+.2,dark=.3")[:2]
