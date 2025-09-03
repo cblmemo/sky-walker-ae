@@ -1,2 +1,12 @@
 metric
 dataset_cache
+.*
+
+**/.DS_Store
+**/*.pyc
+**/__pycache__/
+*.egg-info/
+*.eggs/
+
+paper_fig/
+queue_size/

@@ -27,6 +27,9 @@ def get_metric_for_group(group_name):
     if metrics_path.is_dir():
         # If it's a directory, read all json files inside
         for json_file in metrics_path.glob('*.json'):
+            # Skip macOS resource fork files
+            if json_file.name.startswith('._'):
+                continue
             with open(json_file, 'r') as f:
                 data = json.load(f)
                 file_metrics = [m for m in data['metrics'] if m['e2e_latency'] is not None and m['e2e_latency'] < TIMEOUT_SKIP_SECONDS and m['failed'] is None]
